@@ -1,0 +1,48 @@
+.center{
+	font-size: 35px;
+	font-weight:bold;
+	text-align: center;
+}
+
+
+
+.label{
+	font-size: 18px;
+	font-weight:bold;
+	text-align: left;
+	float:left;
+	margin-left:30%;
+	width:110px;
+	
+}
+
+.input{
+	float:left;
+}
+
+div{
+	margin:10px;
+}
+
+.button{
+	width:100px;
+	margin-left:5px;
+}
+
+#thongbao{
+	color:red;
+	display:block;
+	float: left;
+}
+
+.thongbao{
+	clear:both;
+	margin-left:30%;
+}
+#lbthongbao{
+	font-size: 18px;
+	font-weight:bold;
+	text-align: left;
+	float:left;
+	width:110px;
+}

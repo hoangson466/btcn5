@@ -1,0 +1,38 @@
+﻿doctype html
+html
+  head
+    title B&eacute; t&#x1EAD;p t&iacute;nh
+    link(rel='stylesheet', href='stylesheets/default.css')
+    script(src='javascripts/default.js')
+  body
+    form(name='frm', action='/', method='post')
+      .center Bé tập tính
+      .label
+        #result Số thứ nhất
+        div Số thứ 2
+        div Kết quả
+      .input
+        div
+          input#sothu1(type='input', name='sothu1', onblur='checkNumber()',required='true', value=sothu1)
+        div
+          input#sothu2(type='input', name='sothu2', onblur='checkNumber()',required='true', value=sothu2)
+        div
+          input#ketqua(type='input', value=ketqua)
+      .input
+        div
+          input#cong(type='radio', name='pheptinh', value='cong',required='true',checked=cong)
+          | Cộng 
+          input#tru(type='radio', name='pheptinh', value='tru',checked=tru)
+          | Trừ
+        div
+          input#nhan(type='radio', name='pheptinh', value='nhan',checked=nhan)
+          | Nhân 
+          input#chia(type='radio', name='pheptinh', value='chia',checked=chia)
+          | Chia
+          br
+        div
+          input.button(type='submit', value='Tính', onclick='compute()', formmethod='post')
+      .thongbao
+        #lbthongbao Th&ocirc;ng b&aacute;o
+        #thongbao #{thongbao}
+    body
